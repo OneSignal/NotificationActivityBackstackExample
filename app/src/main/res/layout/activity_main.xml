@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainActivity
+Test "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:text="This is a test app to show how the Activity backstack does not work with notifications on some devices (such as Xiaomi).\n\n
+Steps to follow:\n
+1. Notification should show automatically (don't tap on it yet)\n
+2. Swipe away this app to close it\n
+3. Tap on the notification, this opens a different activity\n
+4. Press the back button.\n
+5. You should now see this page again, if you see the home screen this device has the bug.\n
+\n
+\n
+BUG: Xiaomi ROM bug, NOT an Android bug\n
+The back button behavior works in all cases except for Xiaomi devices\n
+when the app is swiped away and it's Xiaomi specific 'Start in background'\n
+permission is 'Deny'(default) for the app.\n
+\n
+See the code in this example app for TaskStackBuilder and PendingIntent this creates for more details.\n
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
