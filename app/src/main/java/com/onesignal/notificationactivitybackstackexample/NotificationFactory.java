@@ -28,7 +28,7 @@ class NotificationFactory {
    ) {
       return new NotificationCompat.Builder(context, channelId)
          .setContentTitle("Activity backstack test")
-         .setContentText("Tap me after swiping way the app")
+         .setContentText("Tap me after swiping away the app")
          .setSmallIcon(android.R.drawable.ic_popup_reminder)
          .setContentIntent(createIntent(context))
          .build();
