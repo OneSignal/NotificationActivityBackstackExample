@@ -5,7 +5,10 @@ away the app and taps on a notification. After the user presses the device's bac
 stack.
 
 ## How to test my device for this bug?
-Simply build and run the app on your device and follow the instructs in the app.
+1. Download the [NotificationActivityBackstackExampleIssue.apk](https://github.com/OneSignal/NotificationActivityBackstackExample/releases/tag/1.0.0) and install it on your Android device or emulator
+you which to confirm the issue on.
+  * Optionally you may clone this repo and build from source.
+2. Simply open the app on your device and follow its instructs.
 
 ## Details
 This app creates a Notification with a `PendingIntent` that will open `TargetActivity` and put
